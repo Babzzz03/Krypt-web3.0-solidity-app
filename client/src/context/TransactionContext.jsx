@@ -114,7 +114,8 @@ console.log(currentTransactionCount)
           params: [{
             from: currentAccount,
             to: addressTo,
-            gasLimit: "3e7",
+            // gasLimit: "3e7",
+            gas: "0x5208",
             value: parsedAmount._hex,
           }],
         });
